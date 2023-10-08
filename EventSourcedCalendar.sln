@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7436074B-2F1A-4D95-A532-A25E0E92D4C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcedCalendar.Infrastructure.EventStore", "Infrastructure\EventSourcedCalendar.Infrastructure.EventStore\EventSourcedCalendar.Infrastructure.EventStore.csproj", "{E1F1995E-204D-4590-BC8C-BB392AC92628}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInterface", "UserInterface", "{43100C19-66FA-49A8-8DB6-4DBABF5BBC46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C782C0DD-2522-4149-A45F-3D5533481FBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcedCalendar.UserInterface.WebApi", "UserInterface\EventSourcedCalendar.UserInterface.WebApi\EventSourcedCalendar.UserInterface.WebApi.csproj", "{36118543-B2F4-4E80-A8BA-60D30D8DDAB2}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BFBEAA6F-7F5D-4B43-B29C-D5266BE0EFF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcedCalendar.Core.Application", "Core\EventSourcedCalendar.Core.Application\EventSourcedCalendar.Core.Application.csproj", "{C56E9AC5-9197-4F02-9A89-F85C294026D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcedCalendar.Core.Domain", "Core\EventSourcedCalendar.Core.Domain\EventSourcedCalendar.Core.Domain.csproj", "{8625A7BC-F0ED-4E4E-A431-E0F295241AFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1F1995E-204D-4590-BC8C-BB392AC92628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F1995E-204D-4590-BC8C-BB392AC92628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F1995E-204D-4590-BC8C-BB392AC92628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F1995E-204D-4590-BC8C-BB392AC92628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36118543-B2F4-4E80-A8BA-60D30D8DDAB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36118543-B2F4-4E80-A8BA-60D30D8DDAB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36118543-B2F4-4E80-A8BA-60D30D8DDAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36118543-B2F4-4E80-A8BA-60D30D8DDAB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFBEAA6F-7F5D-4B43-B29C-D5266BE0EFF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFBEAA6F-7F5D-4B43-B29C-D5266BE0EFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFBEAA6F-7F5D-4B43-B29C-D5266BE0EFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFBEAA6F-7F5D-4B43-B29C-D5266BE0EFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56E9AC5-9197-4F02-9A89-F85C294026D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56E9AC5-9197-4F02-9A89-F85C294026D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56E9AC5-9197-4F02-9A89-F85C294026D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56E9AC5-9197-4F02-9A89-F85C294026D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8625A7BC-F0ED-4E4E-A431-E0F295241AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8625A7BC-F0ED-4E4E-A431-E0F295241AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8625A7BC-F0ED-4E4E-A431-E0F295241AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8625A7BC-F0ED-4E4E-A431-E0F295241AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E1F1995E-204D-4590-BC8C-BB392AC92628} = {7436074B-2F1A-4D95-A532-A25E0E92D4C3}
+		{36118543-B2F4-4E80-A8BA-60D30D8DDAB2} = {43100C19-66FA-49A8-8DB6-4DBABF5BBC46}
+		{C56E9AC5-9197-4F02-9A89-F85C294026D1} = {C782C0DD-2522-4149-A45F-3D5533481FBD}
+		{8625A7BC-F0ED-4E4E-A431-E0F295241AFD} = {C782C0DD-2522-4149-A45F-3D5533481FBD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80F1E658-4F0B-4426-B676-6FBC3A0308DE}
+	EndGlobalSection
+EndGlobal
