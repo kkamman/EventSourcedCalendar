@@ -11,6 +11,10 @@ public class Calendar : AggregateRoot
 
     public Calendar(Guid id, string name)
     {
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            throw new ArgumentException("Name cannot be empty.", nameof(name));
+        }
         ApplyChange(new CalendarCreatedEvent(id, name));
     }
 
